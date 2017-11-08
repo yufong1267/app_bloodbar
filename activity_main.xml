@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tw.com.flag.bloodbar.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--血量-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/blood"
+            android:layout_alignParentTop="true"
+            android:text="                                                                                                             "
+            android:background="#f00"
+            />
+        <!--回血量-->
+        <!--<Button-->
+            <!--android:onClick="getback"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="補血"-->
+            <!--android:textStyle="bold"-->
+            <!--android:background="#00f"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:id="@+id/button" />-->
+
+        <TextView
+            android:id="@+id/alert"
+            android:text=""
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/fab"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            >
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fullBlood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="getback"
+                />
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
